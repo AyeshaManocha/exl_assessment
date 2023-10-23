@@ -23,7 +23,7 @@ Make sure you have the following software installed on your system:
 ### Installation
 
 1. Clone the repository:
-   git clone https://github.com/ayeshamanocha/sales-analysis-app.git
+   git clone https://github.com/AyeshaManocha/exl_assessment.git
    
 3. Go inside django app
    cd sales-analysis-app
