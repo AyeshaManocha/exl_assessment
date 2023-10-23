@@ -6,7 +6,7 @@ The Sales Analysis Web Application is a Django-based web application that allows
 
 1. **Data Upload:** Users can upload sales data in CSV format.
 2. **Metrics Calculation:** The application calculates and displays total revenue, average price per item, and the best-selling item.
-3. **Visualization:** It generates a bar chart to visualize sales by item and a line chart to display sales trends over time.
+3. **Visualization:** It generates a bar chart to visualize sales trends over time.
 
 ## Getting Started
 
