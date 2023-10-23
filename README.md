@@ -25,10 +25,10 @@ Make sure you have the following software installed on your system:
 1. Clone the repository:
    git clone https://github.com/AyeshaManocha/exl_assessment.git
    
-3. Go inside django app
+2. Go inside django app
    cd sales-analysis-app
 
-3.Create virtual env
+3. Create virtual env
    python -m venv venv
    
 4. Activate virtual env
@@ -43,5 +43,9 @@ Make sure you have the following software installed on your system:
 
 7. Run server
    python manage.py runserver
+
+APIs:
+   To upload the file - http://localhost:8000/sales/upload/
+   Select the file from local machine and click on "Upload" button. Application will redirect to http://localhost:8000/sales/calculate/ to show Total revenue, Average price per item and Best-selling item along with "Sales Over Time" bar chart graph.
 
    
