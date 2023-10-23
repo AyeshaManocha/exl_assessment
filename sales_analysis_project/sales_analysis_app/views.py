@@ -42,17 +42,16 @@ def calculate_metrics(request):
     plt.xlabel('Date')
     plt.ylabel('Sales')
 
-   
 
-    buffer2 = io.BytesIO()
-    plt.savefig(buffer2, format='png')
-    buffer2.seek(0)
-    chart2 = base64.b64encode(buffer2.read()).decode()
-    buffer2.close()
+    buffer = io.BytesIO()
+    plt.savefig(buffer, format='png')
+    buffer.seek(0)
+    chart = base64.b64encode(buffer.read()).decode()
+    buffer.close()
 
     return render(request, 'calculate_metrics.html', {
         'total_revenue': total_revenue,
         'avg_price': avg_price,
         'best_selling_item': best_selling_item,
-        'chart2': chart2,  # Sales Over Time chart
+        'chart': chart,  # Sales Over Time chart
     })
