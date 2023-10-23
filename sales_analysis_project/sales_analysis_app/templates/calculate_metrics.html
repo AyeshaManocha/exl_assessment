@@ -1,0 +1,30 @@
+<!-- calculate_metrics.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Sales Metrics</title>
+    <!-- Include Bootstrap CSS and JavaScript files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>Sales Metrics</h1>
+    <p>Total Revenue: ${{ total_revenue }}</p>
+    <p>Average Price per Item: ${{ avg_price }}</p>
+    <p>Best Selling Item: {{ best_selling_item }}</p>
+
+   
+
+    <h2>Sales Over Time</h2>
+    <!-- Use Bootstrap classes to create a responsive container for the Sales Over Time chart -->
+    <div class="container">
+        <img src="data:image/png;base64,{{ chart2 }}" alt="Sales Over Time" class="img-fluid" style="width: 100%;">
+    </div>
+
+    <!-- You can insert more visualizations or information here as needed -->
+
+    <!-- Bootstrap JavaScript and jQuery should be included for some Bootstrap features to work -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+</body>
+</html>
